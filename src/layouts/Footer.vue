@@ -21,7 +21,7 @@
       —
       <a
         class="text-decoration-none on-surface"
-        href="https://vuetifyjs.com/about/licensing/"
+        href="https://github.com/mertcan-tas/fernetrix/blob/master/LICENSE"
         rel="noopener noreferrer"
         target="_blank"
       >
