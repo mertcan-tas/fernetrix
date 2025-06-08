@@ -1,8 +1,8 @@
 const errorRoutes = [
   {
     path: "/:catchAll(.*)",
+    redirect: "/",
     name: "notfound",
-    component: () => import("@/views/errors/Error404.vue"),
   },
 ];
 
