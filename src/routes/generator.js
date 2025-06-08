@@ -1,11 +1,11 @@
 const generatorRoutes = [
   {
-    path: "/generator/django-secret-key",
+    path: "/django-secret-key",
     name: "django-secret",
     component: () => import("@/views/gens/django/DjangoSecretGen.vue"),
   },
   {
-    path: "/generator/fernet-key",
+    path: "/fernet-key",
     name: "fernet",
     component: () => import("@/views/gens/fernet/FernetGen.vue"),
   },

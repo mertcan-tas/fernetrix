@@ -28,12 +28,12 @@ export default {
       routes: [
         {
           name: "django-secret",
-          icon: "mdi-rocket-launch",
+          icon: "mdi-key-variant",
           title: "Django Secret Generator",
         },
         {
           name: "fernet",
-          icon: "mdi-rocket-launch",
+          icon: "mdi-key-variant",
           title: "Fernet Generator",
         },
       ],

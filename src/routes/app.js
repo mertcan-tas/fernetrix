@@ -2,8 +2,7 @@ const appRoutes = [
   {
     path: "/",
     name: "home",
-    component: () => import("@/views/home/HomeView.vue"),
+    redirect: "/django-secret-key", //
   },
 ];
-
 export default appRoutes;

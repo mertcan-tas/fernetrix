@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 
 export const useUIStore = defineStore("ui", {
   state: () => ({
-    isDrawerOpen: true,
+    isDrawerOpen: false,
   }),
   getters: {
     getDrawerState: (state) => state.isDrawerOpen,
@@ -21,7 +21,7 @@ export const useUIStore = defineStore("ui", {
       this.isDrawerOpen = value;
     },
     forceDrawerOpen() {
-      this.isDrawerOpen = true;
+      this.isDrawerOpen = false;
     },
   },
 });

@@ -7,12 +7,12 @@
             <v-card-title class="text-h4 font-weight-bold text-center mb-4">
               Generate Fernet Key
             </v-card-title>
-
+            
             <v-card-text class="text-center mb-4">
               <p class="text-body-1 mb-2">
                 Generate a secure Fernet key for encryption/decryption
                 operations. Fernet is a symmetric encryption method that uses
-                <a href="#" class="text-decoration-underline"
+                <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard" target="_blank" class="text-decoration-underline"
                   >AES 128 encryption</a
                 >.
               </p>
@@ -26,31 +26,21 @@
                 v-model="displayKey"
                 readonly
                 outlined
-                class="mb-4"
+                class="mb-5"
                 hide-details
               >
                 <template v-slot:append>
                   <v-btn
+                    size="40"
+                    rounded
                     @click="copyToClipboard"
                     :color="copied ? 'success' : 'primary'"
                   >
-                    <v-icon v-if="copied">mdi-check</v-icon>
-                    <v-icon v-else>mdi-content-copy</v-icon>
+                    <v-icon size="18" v-if="copied">mdi-check</v-icon>
+                    <v-icon size="18" v-else>mdi-content-copy</v-icon>
                   </v-btn>
                 </template>
               </v-text-field>
-
-              <v-alert type="info" outlined class="mb-4" dense>
-                <div class="d-flex align-center">
-                  <v-icon left>mdi-information</v-icon>
-                  <span>
-                    <strong>Key Length:</strong>
-                    {{ displayKey.length }} characters |
-                    <strong>Format:</strong> Base64 |
-                    <strong>Bits:</strong> 256-bit
-                  </span>
-                </div>
-              </v-alert>
 
               <v-row>
                 <v-col cols="12" sm="6">
