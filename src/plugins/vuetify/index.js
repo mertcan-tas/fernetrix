@@ -1,14 +1,7 @@
 import { createVuetify } from "vuetify";
 import "vuetify/styles";
 import "@mdi/font/css/materialdesignicons.css";
-import {
-  VBtn,
-  VTextField,
-  VSelect,
-  VCard,
-  VLabel,
-  VDivider,
-} from "vuetify/components";
+import { VBtn, VCard, VLabel } from "vuetify/components";
 
 export default createVuetify({
   theme: {
@@ -51,7 +44,7 @@ export default createVuetify({
       elevation: 0,
       density: "compact",
     },
-    VCardContent: {
+    VCard: {
       elevation: 0,
       rounded: "xl",
       border: "sm",

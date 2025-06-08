@@ -47,22 +47,22 @@
 
               <v-row>
                 <v-col cols="12" sm="6">
-                  <v-btn
+                  <v-btn-outlined
                     block
                     large
                     color="success"
                     @click="copyToClipboard"
                     :disabled="copied"
                   >
-                    <v-icon left>{{
+                    <v-icon left class="mr-1">{{
                       copied ? "mdi-check" : "mdi-content-copy"
                     }}</v-icon>
                     {{ copied ? "Copied!" : "Copy" }}
-                  </v-btn>
+                  </v-btn-outlined>
                 </v-col>
                 <v-col cols="12" sm="6">
                   <v-btn block large color="primary" @click="generateSecretKey">
-                    <v-icon left>mdi-refresh</v-icon>
+                    <v-icon left class="mr-1">mdi-refresh</v-icon>
                     Generate Secret Key
                   </v-btn>
                 </v-col>

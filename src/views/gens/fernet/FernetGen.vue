@@ -44,22 +44,22 @@
 
               <v-row>
                 <v-col cols="12" sm="6">
-                  <v-btn
+                  <v-btn-outlined
                     block
                     large
                     color="success"
                     @click="copyToClipboard"
                     :disabled="copied"
                   >
-                    <v-icon left>{{
+                    <v-icon left class="mr-1">{{
                       copied ? "mdi-check" : "mdi-content-copy"
                     }}</v-icon>
                     {{ copied ? "Copied!" : "Copy Key" }}
-                  </v-btn>
+                  </v-btn-outlined>
                 </v-col>
                 <v-col cols="12" sm="6">
                   <v-btn block large color="primary" @click="generateFernetKey">
-                    <v-icon left>mdi-key</v-icon>
+                    <v-icon left class="mr-1">mdi-key</v-icon>
                     Generate New Key
                   </v-btn>
                 </v-col>
