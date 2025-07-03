@@ -1,9 +1,9 @@
 <template>
   <v-app-bar elevation="0" class="border-b-thin	">
     <template v-slot:prepend>
-      <v-app-bar-nav-icon color="white" size="40" class="border-thin ml-3" @click="handleDrawerToggle"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon color="white" size="40" class="border-thin ml-3"
+        @click="handleDrawerToggle"></v-app-bar-nav-icon>
     </template>
-
     <v-app-bar-title class="no-select">Fernetrix</v-app-bar-title>
   </v-app-bar>
 </template>

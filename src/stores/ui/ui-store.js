@@ -21,7 +21,7 @@ export const useUIStore = defineStore("ui", {
       this.isDrawerOpen = value;
     },
     forceDrawerOpen() {
-      this.isDrawerOpen = false;
+      this.isDrawerOpen = true;
     },
   },
 });
