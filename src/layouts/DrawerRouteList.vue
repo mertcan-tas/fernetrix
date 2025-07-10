@@ -3,11 +3,7 @@
     <SpaceMenu></SpaceMenu>
 
     <template v-for="item in menuItems" :key="item.name">
-      <v-list-item
-        :to="{ name: item.name }"
-        link
-        class="py-2 px-3 mb-3 no-select"
-      >
+      <v-list-item :to="{ name: item.name }" link class="py-2 px-3 mb-3 no-select">
         <v-list-item-title class="d-flex align-center text-subtitle-2">
           <v-icon class="mr-4" :icon="item.icon"></v-icon>
           <span>{{ item.title }}</span>
@@ -30,11 +26,6 @@ export default {
           name: "django-secret",
           icon: "mdi-key-variant",
           title: "Django Secret Generator",
-        },
-        {
-          name: "fernet",
-          icon: "mdi-key-variant",
-          title: "Fernet Generator",
         },
       ],
     };

@@ -13,7 +13,10 @@
   "dependencies": {
     "@fontsource/roboto": "5.2.5",
     "@mdi/font": "7.4.47",
+    "buffer": "^6.0.3",
+    "fernet-nodejs": "^1.0.6",
     "gh-pages": "^6.3.0",
+    "install": "^0.13.0",
     "pinia": "^3.0.3",
     "vue": "^3.5.13",
     "vue-router": "^4.5.1",
