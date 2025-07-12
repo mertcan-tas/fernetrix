@@ -102,7 +102,9 @@
 
           <v-card class="mt-6" elevation="0" rounded="xl">
             <v-card-title class="text-h5 d-flex align-center mb-4">
-              <v-icon color="info" class="mr-2">mdi-book-open-variant</v-icon>
+              <v-icon color="primary" class="mr-2"
+                >mdi-book-open-variant</v-icon
+              >
               About Django Secret Keys
             </v-card-title>
             <v-card-text>
@@ -144,7 +146,7 @@
                 <v-expansion-panel>
                   <v-expansion-panel-title>
                     <div class="d-flex align-center">
-                      <v-icon class="mr-2" color="success">mdi-cog</v-icon>
+                      <v-icon class="mr-2" color="primary">mdi-cog</v-icon>
                       <strong>How to use the generated key?</strong>
                     </div>
                   </v-expansion-panel-title>
@@ -181,7 +183,7 @@
                 <v-expansion-panel>
                   <v-expansion-panel-title>
                     <div class="d-flex align-center">
-                      <v-icon class="mr-2" color="warning">mdi-security</v-icon>
+                      <v-icon class="mr-2" color="primary">mdi-security</v-icon>
                       <strong>Security Best Practices</strong>
                     </div>
                   </v-expansion-panel-title>
@@ -214,7 +216,7 @@
                 <v-expansion-panel>
                   <v-expansion-panel-title>
                     <div class="d-flex align-center">
-                      <v-icon class="mr-2" color="error"
+                      <v-icon class="mr-2" color="primary"
                         >mdi-alert-circle</v-icon
                       >
                       <strong>What happens if my key is compromised?</strong>
@@ -246,7 +248,9 @@
                 <v-expansion-panel>
                   <v-expansion-panel-title>
                     <div class="d-flex align-center">
-                      <v-icon class="mr-2" color="info">mdi-information</v-icon>
+                      <v-icon class="mr-2" color="primary"
+                        >mdi-information</v-icon
+                      >
                       <strong>Generator Features</strong>
                     </div>
                   </v-expansion-panel-title>
